@@ -36,6 +36,12 @@
                 <li><a href="delete_student.php">Delete Student</a></li>
             </ul>
         </li>
+        <li class="li"><a href="#">Feedback</a>
+            <ul>
+                <li class="li"><a href="add_feedback.php">Add Feedback</a></li>
+                <li class="li"><a href="reply_feedback_admin.php">View and Reply Feedback</a></li>
+            </ul>
+        </li>
         <li class="li"><a href="view_leave_admin.php">Approve/Deny Leave</a></li> 
         <li class="li"><a href="logout.php">Logout</a></li>
     </ul>
@@ -77,7 +83,12 @@
                         <li><a href="view_leave.php">View Applied Leaves</a></li>
                     </ul>
                 </li>
-                <li class="li"><a href="add_feedback.php">Feedback</a></li>
+                <li class="li"><a href="#">Leave</a>
+                    <ul>
+                        <li class="li"><a href="add_feedback.php">Add Feedback</a></li>
+                        <li class="li"><a href="reply_feedback_prof.php">View and Reply Feedback</a></li>
+                    </ul>
+                </li>
                 </li>
                 <li class="li"><a href="logout.php">Logout</a></li>
             </ul>	
@@ -115,6 +126,12 @@
                     <ul>
                         <li><a href="apply_leave.php">Apply Leave</a></li>
                         <li><a href="view_leave.php">View Applied Leaves</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="#">Leave</a>
+                    <ul>
+                        <li class="li"><a href="add_feedback.php">Add Feedback</a></li>
+                        <li class="li"><a href="reply_feedback_student.php">View and Reply Feedback</a></li>
                     </ul>
                 </li>
                 <li class="li"><a href="add_feedback.php">Feedback</a></li>
