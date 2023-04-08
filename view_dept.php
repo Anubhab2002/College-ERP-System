@@ -1,11 +1,6 @@
 <?php
 	include "database.php";
 	session_start();
-	if(!isset($_SESSION["admin_ID"]))
-	{
-		echo "<script>window.open('index.php?mes=Access Denied..','_self');</script>";
-		exit;
-	}
 ?>
 
 <!DOCTYPE html>

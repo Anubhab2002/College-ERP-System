@@ -36,6 +36,7 @@
                 <li><a href="delete_student.php">Delete Student</a></li>
             </ul>
         </li>
+        <li class="li"><a href="view_leave_admin.php">Approve/Deny Leave</a></li> 
         <li class="li"><a href="logout.php">Logout</a></li>
     </ul>
     ';
@@ -96,18 +97,12 @@
                 <li class="li"><a href="#">Course</a>
                     <ul>
                         <li><a href="view_course.php">View Course</a></li>
-                        <li><a href="enrollment_apply.php">Apply for Course</a></li>
+                        <li><a href="apply_enrollment.php">Apply for Course</a></li>
                     </ul>
                 </li>
                 <li class="li"><a href="#">Professor</a>
                     <ul>
                         <li><a href="view_prof.php">View Professor</a></li>
-                    </ul>
-                </li>
-                <li class="li"><a href="#">Student</a>
-                    <ul>
-                        <li><a href="view_student_profwise.php">View Student</a></li>
-                        <li><a href="grade_student.php">Grade Student</a></li>
                     </ul>
                 </li>
                 <li class="li"><a href="#">Attendance</a>
@@ -116,7 +111,6 @@
                         <li><a href="mark_attendance.php">Mark Attendance</a></li>
                     </ul>
                 </li>
-                <li class="li"><a href="enrollment_action.php">Approve/Deny Enrollments</a></li>
                 <li class="li"><a href="#">Leave</a>
                     <ul>
                         <li><a href="apply_leave.php">Apply Leave</a></li>
