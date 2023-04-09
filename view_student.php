@@ -25,7 +25,7 @@
 				<thead>
 					<tr>
 						<th>Student ID</th>
-						<th>Department ID</th>
+						<th>Department Name</th>
 						<th>Student Name</th>
 						<th>Date of Birth</th>
 						<th>Date of Joining</th>
