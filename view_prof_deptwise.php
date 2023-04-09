@@ -7,17 +7,22 @@
 <html>
 <head>
     <title>XYZ Institute of Technology ERP</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<h1>Professors</h1>
-	<table>
+    <?php include "navbar.php"; ?><br>
+    <div class="sidebar">
+        <?php include "sidebar.php"; ?>
+    </div>  
 		<?php
 			// Retrieve professor data by department if a department ID is specified in the URL
 			if (isset($_GET["dept_ID"])) {
 				$dept_id = $_GET["dept_ID"];
 				$sql = "SELECT * FROM professor WHERE dept_ID='$dept_id'";
 				$result = $db->query($sql);
+
+				echo '<h1>Professors and Courses offered by'.$dept_id.'</h1> <br> <br>';
+				echo '<table>';
 
 				// Display professor data in table
 				if ($result->num_rows > 0) {
@@ -54,5 +59,7 @@
 			$db->close();
 		?>
 	</table>
+
+	<?php include"footer.php";?>
 </body>
 </html>

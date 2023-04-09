@@ -17,9 +17,6 @@
 	<body>
 	
 		<?php include"navbar.php";?><br>
-		
-		
-		<img src="img/1.jpg" style="margin-left:90px;" class="sha">
 			
 			<div id="section">
 			
@@ -44,6 +41,9 @@
                         echo "<li>Date of Joining: ".$student["doj"]."</li>";
                         echo "</ul>";
                     ?>
+                </div>
+
+                <div class="content">
 
                     <?php
                         // Retrieve course details from database
@@ -51,7 +51,7 @@
                         $query = "SELECT c.course_name, c.course_ID, e.grades, e.doe
                                 FROM Enrollment e
                                 JOIN Course c ON e.course_ID = c.course_ID
-                                WHERE e.student_ID = '$student_id' and e.status <> 'Pending'";
+                                WHERE e.student_ID = '$student_id' and e.status = 'Approved'";
                         $result = mysqli_query($db, $query);
 
                         // Display course details
@@ -66,28 +66,6 @@
                             echo "<td>".$row["doe"]."</td>";
                             echo "</tr>";
                         }
-                        echo "</table>";
-                    ?>
-
-                    <?php
-                        // Retrieve attendance details from database
-                        $student_id = $_SESSION["student_ID"];
-                        $query = "SELECT COUNT(*) AS days_present, days_total
-                                FROM Attendance
-                                WHERE student_ID = '$student_id'";
-                        $result = mysqli_query($db, $query);
-                        $attendance = mysqli_fetch_assoc($result);
-                        $attendance_percent = round(($attendance["days_present"] / $attendance["days_total"]) * 100, 2);
-
-                        // Display attendance details
-                        echo "<h4>Attendance Report:</h4>";
-                        echo "<table>";
-                        echo "<tr><th>Days Present</th><th>Total Days</th><th>Percentage</th></tr>";
-                        echo "<tr>";
-                        echo "<td>".$attendance["days_present"]."</td>";
-                        echo "<td>".$attendance["days_total"]."</td>";
-                        echo "<td>".$attendance_percent."%</td>";
-                        echo "</tr>";
                         echo "</table>";
                     ?>
 

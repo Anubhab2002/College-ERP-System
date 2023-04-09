@@ -7,9 +7,13 @@
 <html>
 <head>
     <title>XYZ Institute of Technology ERP</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+    <?php include "navbar.php"; ?><br>
+    <div class="sidebar">
+        <?php include "sidebar.php"; ?>
+    </div>  
 	<h1>Departments</h1>
 	<table>
 		<tr>
@@ -32,5 +36,7 @@
 			$db->close();
 		?>
 	</table>
+
+	<?php include"footer.php";?>
 </body>
 </html>

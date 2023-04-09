@@ -36,8 +36,7 @@
 					
 					<li><a href="index.php">Admin</a></li>
                     <li><a href="prof_login.php">Professor</a></li>
-                    <li><a href="student_login.php">Student</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>';
+                    <li><a href="student_login.php">Student</a></li>';
 				}
 			?>
 				

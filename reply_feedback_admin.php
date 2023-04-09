@@ -51,5 +51,7 @@ if (!isset($_SESSION["admin_ID"])) {
         echo "No Feedback present.";
     }
     ?>
+
+<?php include"footer.php";?>
 </body>
 </html>

@@ -12,10 +12,14 @@ if (!isset($_SESSION["student_ID"])) {
 <html>
 
 <head>
-    <title>Submit Enrollment Request</title>
+    <title>XYZ Institute of Technology ERP</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
+    <?php include "navbar.php"; ?><br>
+    <div class="sidebar">
+        <?php include "sidebar.php"; ?>
+    </div>  
     <h1>Submit Enrollment Request</h1>
 
     <?php
@@ -43,7 +47,7 @@ if (!isset($_SESSION["student_ID"])) {
         <button type="Submit" class="btn" name="Submit">Submit Enrollment Request</button>
     </form>
 
-
+    <?php include"footer.php";?>
 </body>
 
 </html>

@@ -32,7 +32,7 @@ if (!isset($_SESSION["student_ID"])) {
     }
     ?>
     <?php
-    $sql = "SELECT * FROM Feedback WHERE feedback_to='{$_SESSION["prof_ID"]}'";
+    $sql = "SELECT * FROM Feedback WHERE feedback_to='{$_SESSION["student_ID"]}'";
     $result = $db->query($sql);
 
     if ($result->num_rows > 0) {
@@ -51,5 +51,7 @@ if (!isset($_SESSION["student_ID"])) {
         echo "No Feedback present.";
     }
     ?>
+
+<?php include"footer.php";?>
 </body>
 </html>

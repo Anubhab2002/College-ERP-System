@@ -79,7 +79,7 @@ session_start();
         </tr>';
 
         // Retrieve department data from database
-        $sql = "SELECT * FROM Exam INNER JOIN Enrollment ON Exam.course_ID = Enrollment.course_ID WHERE  Enrollment.student_ID = '{$_SESSION["student_ID"]}";
+        $sql = "SELECT * FROM Exam INNER JOIN Enrollment ON Exam.course_ID = Enrollment.course_ID WHERE  Enrollment.student_ID = '{$_SESSION["student_ID"]}' AND Enrollment.status = 'Approved'";
         $result = $db->query($sql);
 
         // Display department data in table
@@ -94,6 +94,8 @@ session_start();
     }
     ?>
     </table>
+
+    <?php include"footer.php";?>
 </body>
 
 </html>

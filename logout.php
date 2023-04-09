@@ -4,8 +4,10 @@
 	
 	unset ($_SESSION["admin_ID"]);
 	unset ($_SESSION["admin_name"]);
-	// unset ($_SESSION["TID"]);
-	// unset ($_SESSION["TNAME"]);
+	unset ($_SESSION["prof_ID"]);
+	unset ($_SESSION["prof_name"]);
+	unset ($_SESSION["student_ID"]);
+	unset ($_SESSION["student_name"]);
 	
 	session_destroy();
 	echo "<script>window.open('index.php','_self');</script>";

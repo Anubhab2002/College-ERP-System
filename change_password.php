@@ -11,9 +11,6 @@
 	</head>
 	<body>
 			<?php include"navbar.php";?><br>
-			
-			<img src="img/1.jpg" style="margin-left:90px;" class="sha">
-			
 				<div id="section">
 				
 					<?php include"sidebar.php";?><br><br><br>
@@ -26,13 +23,13 @@
                             {
                                 if(isset($_POST["submit"]))
                                 {
-                                    $sql="select * from admin where admin_password='{$_POST["opass"]}' and admin_ID='{$_SESSION["AID"]}'";
+                                    $sql="select * from admin where admin_password='{$_POST["opass"]}' and admin_ID='{$_SESSION["admin_ID"]}'";
                                     $result=$db->query($sql);
                                     if($result->num_rows>0)
                                     {
                                         if($_POST["npass"]==$_POST["cpass"])
                                         {
-                                            $s="update admin SET admin_password='{$_POST["npass"]}' where admin_ID='{$_SESSION["AID"]}'";
+                                            $s="update admin SET admin_password='{$_POST["npass"]}' where admin_ID='{$_SESSION["admin_ID"]}'";
                                             $db->query($s);
                                             echo "<div class='success'>Password Changed</div>";
                                         }
@@ -51,13 +48,13 @@
                             {
                                 if(isset($_POST["submit"]))
                                 {
-                                    $sql="select * from student where password='{$_POST["opass"]}' and student_ID='{$_SESSION["AID"]}'";
+                                    $sql="select * from student where password='{$_POST["opass"]}' and student_ID='{$_SESSION["student_ID"]}'";
                                     $result=$db->query($sql);
                                     if($result->num_rows>0)
                                     {
                                         if($_POST["npass"]==$_POST["cpass"])
                                         {
-                                            $s="update student SET password='{$_POST["npass"]}' where student_ID='{$_SESSION["AID"]}'";
+                                            $s="UPDATE student SET password='{$_POST["npass"]}' where student_ID='{$_SESSION["student_ID"]}'";
                                             $db->query($s);
                                             echo "<div class='success'>Password Changed</div>";
                                         }
@@ -76,13 +73,13 @@
                             {
                                 if(isset($_POST["submit"]))
                                 {
-                                    $sql="select * from professor where password='{$_POST["opass"]}' and prof_ID='{$_SESSION["AID"]}'";
+                                    $sql="select * from professor where password='{$_POST["opass"]}' and prof_ID='{$_SESSION["prof_ID"]}'";
                                     $result=$db->query($sql);
                                     if($result->num_rows>0)
                                     {
                                         if($_POST["npass"]==$_POST["cpass"])
                                         {
-                                            $s="update student SET password='{$_POST["npass"]}' where prof_ID='{$_SESSION["AID"]}'";
+                                            $s="UPDATE Professor SET password='{$_POST["npass"]}' where prof_ID='{$_SESSION["prof_ID"]}'";
                                             $db->query($s);
                                             echo "<div class='success'>Password Changed</div>";
                                         }

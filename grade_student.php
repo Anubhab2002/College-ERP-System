@@ -38,7 +38,6 @@
 </head>
 <body>
     <?php include "navbar.php"; ?><br>
-    <img src="img/1.jpg" width="780" style="margin-left:10px;" class="sha">
     <div class="sidebar">
         <?php include "sidebar.php"; ?>
     </div>
@@ -133,7 +132,7 @@
     </table>
     </div>
 
-<div class="footer">
+<!-- <div class="footer">
     <footer>
         <p>Copyright &copy; ANUBHAB MANDAL 20MA20080
         </p>
@@ -146,7 +145,8 @@
             $(".error").slideUp(1000);
         });
     });
-</script>
+</script> -->
+<?php include"footer.php";?>
 </body>
 </html>
 

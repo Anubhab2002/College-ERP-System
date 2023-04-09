@@ -57,7 +57,7 @@ if (!isset($_SESSION["prof_ID"])) {
         echo "No Pending Enrollment requests.";
     }
     ?>
-
+    <?php include"footer.php";?>
 </body>
 
 </html>

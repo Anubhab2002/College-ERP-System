@@ -45,7 +45,7 @@ session_start();
 
         <button type="Submit" class="btn" name="Submit">Submit Feedback</button>
     </form>
-
+    <?php include"footer.php";?>
 
 </body>
 

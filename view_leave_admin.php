@@ -56,7 +56,7 @@ if (!isset($_SESSION["admin_ID"])) {
         echo "No Pending Leaves present.";
     }
     ?>
-
+    <?php include"footer.php";?>
 </body>
 
 </html>

@@ -24,12 +24,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Delete Course</title>
+		<title>XYZ Institute of Technology ERP</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<?php include "navbar.php"; ?><br>
-		<img src="img/1.jpg" style="margin-left:90px;" class="sha">
 		
 		<div id="section">
 			<?php include "sidebar.php"; ?><br><br><br>

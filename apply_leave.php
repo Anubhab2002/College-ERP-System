@@ -1,10 +1,6 @@
 <?php
 include "database.php";
 session_start();
-if (!isset($_SESSION["prof_ID"])) {
-    echo "<script>window.open('index.php?mes=Access Denied...','_self');</script>";
-
-}
 ?>
 
 <!-- HTML code for the leave request form -->
@@ -12,10 +8,14 @@ if (!isset($_SESSION["prof_ID"])) {
 <html>
 
 <head>
-    <title>Submit Leave Request</title>
+    <title>XYZ Institute of Technology ERP</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
+    <?php include "navbar.php"; ?><br>
+    <div class="sidebar">
+        <?php include "sidebar.php"; ?>
+    </div>  
     <h1>Submit Leave Request</h1>
 
     <?php
@@ -46,7 +46,7 @@ if (!isset($_SESSION["prof_ID"])) {
         <button type="Submit" class="btn" name="Submit">Submit Leave Request</button>
     </form>
 
-
+    <?php include"footer.php";?>
 </body>
 
 </html>

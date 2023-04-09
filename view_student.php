@@ -14,7 +14,6 @@
 	</head>
 	<body>
 		<?php include "navbar.php"; ?><br>
-		<img src="img/1.jpg" width="780" style="margin-left:10px;" class="sha">
 		<div class="sidebar">
 			<?php include "sidebar.php"; ?>
 		</div>
@@ -52,18 +51,7 @@
 				</tbody>
 			</table>
 		</div>
-		
-		<div class="footer">
-			<footer><p>Copyright &copy; ANUBHAB MANDAL 20MA20080</p></footer>
-		</div>
-		
-		<script src="js/jquery.js"></script>
-		<script>
-			$(document).ready(function(){
-				$(".error").fadeTo(1000, 100).slideUp(1000, function(){
-					$(".error").slideUp(1000);
-				});
-			});
-		</script>
+
+<?php include"footer.php";?>
 	</body>
 </html>

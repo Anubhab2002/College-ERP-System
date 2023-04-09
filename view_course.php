@@ -11,11 +11,9 @@
     </head>
     <body>
         <?php include "navbar.php"; ?><br>
-        <img src="img/1.jpg" style="margin-left:90px;" class="sha">
         
         <div id="section">
             <?php include "sidebar.php"; ?><br><br><br>
-            <h3 class="text">Welcome <?php echo $_SESSION["admin_name"]; ?></h3><br><hr><br>
             <div class="content1">
                 <h3>View Courses</h3><br>
                 <table class="tablefull">

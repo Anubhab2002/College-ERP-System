@@ -25,27 +25,22 @@
 						if(isset($_POST["submit"]))
 						{
 							$edate=$_POST["ye"].'-'.$_POST["mo"].'-'.$_POST["da"];
-							// $target="student/";
-							// $target_file=$target.basename($_FILES["img"]["name"]);
-							// if(move_uploaded_file($_FILES['img']['tmp_name'],$target_file))
-							// {
-                                $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-                                $password = '';
-                                for ($i = 0; $i < 10; $i++) {
-                                    $password .= $characters[rand(0, strlen($characters) - 1)];
-                                }
+							$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+							$password = '';
+							for ($i = 0; $i < 10; $i++) {
+								$password .= $characters[rand(0, strlen($characters) - 1)];
+							}
 
-								$sq="insert into student(student_ID, dept_ID, student_name, dob, password) values('{$_POST["student_ID"]}', '{$_POST["dept_ID"]}',  '{$_POST["student_name"]}', '{$edate}', '{$password}')";
-								
-								if($db->query($sq))
-								{
-									echo "<div class='success'>Added New Student</div>";
-								}
-								else
-								{
-									echo "<div class='error'>Failed to add new student</div>";
-								}
-							// }
+							$sq="insert into student(student_ID, dept_ID, student_name, dob, password) values('{$_POST["student_ID"]}', '{$_POST["dept_ID"]}',  '{$_POST["student_name"]}', '{$edate}', '{$password}')";
+							
+							if($db->query($sq))
+							{
+								echo "<div class='success'>Added New Student</div>";
+							}
+							else
+							{
+								echo "<div class='error'>Failed to add new student</div>";
+							}
 							
 						}
 					?>

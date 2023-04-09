@@ -12,10 +12,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>View Attendance</title>
+    <title>XYZ Institute of Technology ERP</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+    <?php include "navbar.php"; ?><br>
+    <div class="sidebar">
+        <?php include "sidebar.php"; ?>
+    </div>  
     <h1>Attendance Report</h1>
 
     <?php
@@ -76,6 +80,6 @@
         else {
             echo '<p>No attendance data found.</p>';
         } ?>
-
+    <?php include"footer.php";?>
 </body>
 </html>

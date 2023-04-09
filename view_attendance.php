@@ -12,11 +12,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>View Attendance</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>XYZ Institute of Technology ERP</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<h1>Attendance Report</h1>
+    <?php include "navbar.php"; ?><br>
+    <div class="sidebar">
+        <?php include "sidebar.php"; ?>
+    </div>  
+	<h1>Attendance Report</h1> <br><br>
 	<p>Student Name: <?php echo $_SESSION['student_name']; ?></p>
 	<?php
         $sql = "SELECT * from Attendance INNER JOIN Student ON Attendance.student_ID = Student.student_ID INNER JOIN Department ON Student.dept_ID = Department.dept_ID WHERE Student.student_ID = '{$_SESSION['student_ID']}' ";
@@ -30,7 +34,7 @@
             echo $row['dept_name'];
             
             echo '
-                </p>
+                </p> <br> <br>  
             ';
 
             $perc = round(($row["days_present"] / $row["days_total"]) * 100, 2);
@@ -48,7 +52,7 @@
         }
 
         ?>
-
+    <?php include"footer.php";?>
 </body>
 </html>
 

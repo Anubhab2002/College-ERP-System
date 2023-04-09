@@ -52,6 +52,8 @@ if (!isset($_SESSION["prof_ID"])) {
         <input type="date" id="exam_date" name="exam_date" required><br><br>
         <input type="submit" value="Set Exam" name='submit'>
     </form>
+
+    <?php include"footer.php";?>
 </body>
 
 </html>

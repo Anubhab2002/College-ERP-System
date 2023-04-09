@@ -16,7 +16,6 @@
     </head>
 	<body>
 				<?php include"navbar.php";?><br>
-				<img src="img/1.jpg" style="margin-left:90px;" class="sha">
 				
 			<div id="section">
 					<?php include"sidebar.php";?><br><br><br>
@@ -65,53 +64,6 @@
 				
 					</div>
 				
-				
-				<div class="tbox" >
-					<h3 style="margin-top:30px;"> Subject Details</h3><br>
-					<?php
-						if(isset($_GET["mes"]))
-						{
-							echo"<div class='error'>{$_GET["mes"]}</div>";	
-						}
-					
-					?>
-					<table border="1px" >
-						<tr>
-							<th>S.No</th>
-							<th>Subject Name</th>
-							<th>Delete</th>
-						</tr>
-						<?php
-							$s="select * from sub";
-							$res=$db->query($s);
-							if($res->num_rows>0)
-							{
-								$i=0;
-								while($r=$res->fetch_assoc())
-								{
-									$i++;
-									echo "
-										<tr>
-										<td>{$i}</td>
-										<td>{$r["SNAME"]}</td>
-										<td><a href='sub_delete.php?id={$r["SID"]}' class='btnr'>Delete</a></td>
-										</tr>
-									
-									";
-									
-								}
-								
-							}
-							else
-							{
-								echo "No Record Found";
-							}
-						?>
-						
-					</table>
-				</div>
-			</div>
-	
 				<?php include"footer.php";?>
 	</body>
 </html>
