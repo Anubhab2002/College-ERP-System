@@ -209,8 +209,6 @@ CREATE TABLE `feedback` (
 --
 
 INSERT INTO `feedback` (`feedback_ID`, `person_ID`, `feedback_details`, `feedback_to`, `feedback_reply`) VALUES
-(1, 'AD_CS', 'I am depressed', '1', 'Fuck You'),
-(2, '1', 'You are depressed', 'AD_CS', 'I am obviously depressed'),
 (3, 'MK_CS', 'I love this college', '1', NULL);
 
 -- --------------------------------------------------------
@@ -230,10 +228,6 @@ CREATE TABLE `leaveapp` (
 --
 -- Dumping data for table `leaveapp`
 --
-
-INSERT INTO `leaveapp` (`leave_ID`, `prof_ID`, `status`, `reason`, `days`) VALUES
-(1, 'AD_CS', 'Approved', 'I want to bunk class', 30),
-(2, 'AD_CS', 'Denied', 'I am going on honeymoon', 5);
 
 -- --------------------------------------------------------
 
