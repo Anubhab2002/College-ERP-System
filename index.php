@@ -45,7 +45,7 @@
 					<input type="text" name="admin_name" required class="input"><br><br>
 					<label>Password </label><br>
 					<input type="password" name="admin_password" required class="input"><br>
-					<button type="submit" class="btn" name="login">Login Here</button>
+					<button type="submit" class="btn" name="login">Login</button>
 				</form>
 			</div>
 		</div>

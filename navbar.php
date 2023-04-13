@@ -1,8 +1,9 @@
 <div class="navbar">
 
 			<ul class="list">
-				<b style="color:white;float:left;line-height:50px;margin-left:15px;font-family:Cooper Black;">
-				XYZ Institute of Technology ERP</b>
+				<img src="img/xyz_logo.png" alt="logo" style="height: 40px; float:left; padding-top: 9px; padding-left:8px;">
+				<!-- <b style="color:white;float:left;line-height:50px;margin-left:15px;font-family:Cooper Black;">
+				XYZ Institute of Technology ERP</b> -->
 			<?php
 				if(isset($_SESSION["admin_ID"]))
 				{

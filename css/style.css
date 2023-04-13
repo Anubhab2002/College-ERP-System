@@ -37,7 +37,7 @@ a{
 
 
 .navbar{
-	background:#174daa;
+	background:#0f58d5;
 	height:60px;
 	width:100%;	
 }
@@ -81,7 +81,7 @@ h1,h2,h3,h4,h5,h6,label{
 .btn:hover{
 	border-radius:5px;
 	padding:10px;
-	background:#174daa;
+	background:#0f58d5;
 	color:white;
 	margin-top:40px;
 
@@ -239,7 +239,7 @@ footer{
 
 
 .footer{
-	background:#174daa;
+	background:#0f58d5;
 	height:60px;
 	width:100%;	
 	float:left;
