@@ -10,6 +10,8 @@ This is an implementation of the College ERP system of IIT Kharagpur using the L
 git clone https://github.com/Anubhab2002/College-ERP-System.git
 ```
 
+You could also download the .zip file from the submission zip named ```20MA20080_DBMS_Project.zip``` sent through e-mail.
+
 2. Download and install ```Xampp Server``` in your local system from the following download link:
  - [Link for Windows Users](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.4/xampp-windows-x64-8.2.4-0-VS16-installer.exe)
  - [Link for Linux Users](https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.2.4/xampp-linux-x64-8.2.4-0-installer.run)
@@ -37,7 +39,7 @@ netstat -a
 to list all the processes and the ports occupied.
 You can then go to the Task Manager and ```End Task``` for ```mysqld.exe``` and/or ```apache```.
 
-4. Next copy the project directory ```College-ERP-System``` into ```/root/opt/lampp/htdocs/``` for **linux** systems or ```C:\xampp\htdocs\``` for **windows``` systems.
+4. Next copy the project directory ```College_ERP_System``` into ```/root/opt/lampp/htdocs/``` for **linux** systems or ```C:\xampp\htdocs\``` for **windows** systems.
 
 5. Start the Apache and MySQL servers from the Xampp control panel.
 
