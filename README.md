@@ -2,6 +2,11 @@
 
 This is an implementation of the College ERP system of IIT Kharagpur using the LAMP Framework. This ERP System is a fully functional College Management System with features ranging from admin-side functionalities to professor-side functionalities to student-side functionalities as discussed in the report.
 
+## Schema of the MQ-SQL Database:
+
+![image](https://github.com/user-attachments/assets/e300c626-ef7c-4b29-b01f-965a7e6ae6fd)
+
+
 ## Steps to execute the code and reproduce the project:
 
 1. Clone the repository:
